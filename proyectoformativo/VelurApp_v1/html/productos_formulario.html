@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velurapp/Productos/Formulario</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado">
+            <h1>VelurApp</h1>
+            <img src="../images/Veluroslogo.png" alt="Logo de la empresa Veluros">
+        </div>
+        <div class="menu-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="proveedores.html">Proovedores</a></li>
+                    <li><a href="facturas.html">Facturas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="formulario">
+        <form action="/procesar_producto" method="POST">
+            <fieldset>
+                <legend>Registrar Nuevo Producto</legend>
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="codigo">Codigo del Producto:</label>
+                <input type="text" id="codigo" name="codigo" required>
+                
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" name="categoria" required>
+                
+                <label for="precio">Precio Unitario ($):</label>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+                
+                <label for="stock">Cantidad en Stock:</label>
+                <input type="number" id="stock" name="stock" required>
+                
+                <button type="submit">Guardar Producto</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p>Velurapp &copy; 2024 copyright - Todos los derechos reservados</p>
+        <ul>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Facebook</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Tik Tok</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

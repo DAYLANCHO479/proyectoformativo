@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelurApp/Facturas/Formulario</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado">
+            <h1>VelurApp</h1>
+            <img src="../images/Veluroslogo.png" alt="Logo de la empresa Veluros">
+        </div>
+        <div class="menu-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="productos.html"></a>Productos</li>
+                    <li><a href="proveedores.html">Proovedores</a></li>
+                    <li><a href="facturas.html">Facturas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="formulario">
+        
+        <form action="/procesar_factura" method="POST">
+            <fieldset>
+                <legend>Registrar Nueva Factura</legend>
+                <label for="numero">Numero de Factura:</label>
+                <input type="text" id="numero" name="numero" required>
+                
+                <label for="cliente">Cliente:</label>
+                <input type="text" id="cliente" name="cliente" required>
+                
+                <label for="fecha">Fecha de Emision:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="productos">Productos:</label>
+                <textarea id="productos" name="productos" rows="3" placeholder="Lista de productos..."></textarea>
+                
+                <label for="total">Monto Total ($):</label>
+                <input type="number" id="total" name="total" step="1000" required>
+                
+                <button type="submit">Guardar Factura</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p>Velurapp &copy; 2024 copyright - Todos los derechos reservados</p>
+        <ul>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Facebook</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Tik Tok</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

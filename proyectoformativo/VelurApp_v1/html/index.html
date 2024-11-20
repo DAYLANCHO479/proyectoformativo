@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velurapp</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Enxabezado con el nombre de la empresa el logo y un menu de navegación-->
+    <header>
+        <div class="contenedor-encabezado">
+            <h1>VelurApp</h1>
+            <img src="../images/Veluroslogo.png" alt="Logo de la empresa Veluros">
+        </div>
+        <div class="menu-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="proveedores.html">Proovedores</a></li>
+                    <li><a href="facturas.html">Facturas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Sección principal de la pagina-->
+    <main id="contenido-principal">
+        <div class="contenedor-grid"> <!--Gracias a este div los elementos se mostraran en forma de 2x2-->
+            <a href="clientes.html"> <!--Al poner un section dentro de un a permite que cuando se paso el raton sobre este se pueda clickear donde sea-->
+                <section>
+                    <img src="../images/icons/icono_cliente_1.png" alt="Icono de cliente">
+                    <h2>Clientes</h2>
+                </section>
+            </a>
+    
+            <a href="productos.html">
+                <section>
+                    <img src="../images/icons/icono_producto_1.png" alt="Icono de Producto">
+                    <h2>Productos</h2>
+                </section>
+            </a>
+    
+            <a href="proveedores.html">
+                <section>
+                    <img src="../images/icons/icono_proveedor_1.png" alt="Icono de Proveedor">
+                    <h2>Proveedores</h2>
+                </section>
+            </a>
+    
+            <a href="facturas.html">
+                <section>
+                    <img src="../images/icons/icono_factura_1.png" alt="Icono de Proveedor">
+                    <h2>Facturas</h2>
+                </section>
+            </a>
+        </div>
+    </main>
+
+    <!--Footer con información y enlaces provisionales-->
+    <footer>
+        <p>Velurapp &copy; 2024 copyright - Todos los derechos reservados</p>
+        <ul>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Facebook</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Tik Tok</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=ksw9mkPPK7HhT85v">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
